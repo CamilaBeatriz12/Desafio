@@ -1,0 +1,235 @@
+body { /*referente ao todo*/
+    color: #566787; /*cor da fonte*/
+    background: #f5f5f5; /*cor do fundo*/
+    font-family: 'Varela Round', sans-serif; /*tipo de fonte*/
+    font-size: 13px; /*tamanho fonte*/
+}
+
+.table-wrapper { /*referente ao corpo da tabela (sem o 'título')*/
+    background: rgb(255, 255, 255); /*cor do fundo*/
+    padding: 20px 25px; /*espaçamento superior e inferior, esquerda e direita*/
+    margin: 30px 0; /*margem superior e inferior*/
+    border-radius: 2px; /*leve acentuada nas bordas*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247); /*sombra na borda*/
+}
+
+.table-title { /*referente a caixa do 'título'*/
+    padding-bottom: 15px; /*espaçamento inferior*/
+    background: linear-gradient(40deg, #001f54, #CCDBFD) !important; /*gradiente de cor*/
+    color: #fff; /*cor da fonte*/
+    padding: 16px 30px; /*espaçamento superior e inferior, esquerda e direita*/
+    margin: -20px -25px 10px; /*margem superior, esquerda e direita, inferior*/
+    border-radius: 2px 2px 0 0;/*leve acentuada nas bordas superior esquerda e direita*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247); /*sombra na borda*/
+}
+
+.table-title h2 { /*referente ao 'título'*/
+    margin: 5px 0 0; /*margem superior*/
+    font-size: 24px; /*tamanho fonte*/
+}
+
+.table-title .btn-group { /*acessa todos os botões dentro desta classe*/
+    float: right; /*posiciona todos a direta*/
+}
+
+.table-title .btn { /*referente ao todo do botão de adicionar cliente*/
+    color: rgb(255, 255, 255); /*cor da fonte do botão*/
+    font-size: 13px; /*tamanho fonte*/
+    float: right; /*posiciona a direta*/
+    border: none; /*não possui borda*/
+    min-width: 50px; /*largura mínima*/
+    border-radius: 1px; /*leve acentuada nas bordas*/
+    outline: none !important; /*contorno*/
+    margin-left: 10px; /*margem esquerda*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247); /*sombra na borda*/
+}
+
+.table-title .btn i { /*referente ao símbolo do botão de adicionar cliente*/
+    float: left; /*posiciona a esquerda*/
+    font-size: 21px; /*tamanho fonte*/
+    margin-right: 5px; /*margem direita*/
+}
+
+.table-title .btn span { /*referente a frase do botão de adicionar cliente*/
+    float: left; /*posiciona a esquerda*/
+    margin-top: 2px; /*margem superior*/
+}
+
+table.table tr th,
+table.table tr td { /*referente as linhas do corpo da tabela*/
+    border-color: #ecf0f1; /*cor da borda das linhas*/
+    padding: 12px 15px; /*espaçamento superior e inferior, esquerda e direita*/
+    vertical-align: middle; /*centralizar as frases na linha*/
+}
+
+table.table tr th:first-child { /*referente ao primeiro filho do elemento th*/
+    width: 60px; /*largura*/
+}
+
+table.table tr th:last-child { /*referente ao último filho do elemento th*/
+    width: 100px; /*largura*/
+}
+
+table.table-striped tbody tr:nth-of-type(odd) { /*referente a variação de cores nas linhas*/
+    background-color: #f5f5f5; /*cor do fundo*/
+}
+
+table.table-striped.table-hover tbody tr:hover { /*efeito da passagem do cursor*/
+    background: #f5f5f5; /*cor do fundo*/
+}
+
+table.table td:last-child i { /*referente aos símbolos de editar e deletar*/
+    opacity: 0.9; /*opacidade ao símbolo*/
+    font-size: 22px; /*tamanho do espaço ocupado pelo símbolo*/
+    margin: 0 5px; /*margem esquerda e direita*/
+}
+
+table.table td a.edit { /*referente ao símbolos editar*/
+    color: #FFC107; /*cor do símbolo*/
+}
+
+table.table td a.delete { /*referente ao símbolos deletar*/
+    color: #F44336; /*cor do símbolo*/
+}
+
+.pagination { /*referente as possíveis páginas de cadastro*/
+    float: right; /*posiciona a direita*/
+    margin: 0 0 5px; /*margem inferior*/
+}
+
+.pagination li a { /*referente as páginas*/
+    border: none; /*sem borda*/
+    font-size: 13px; /*tamanho fonte*/
+    min-width: 30px; /*largura mínima*/
+    min-height: 30px; /*largura mínima*/
+    color: #999; /*cor da fonte*/
+    margin: 0 2px; /*margem esquerda e direita*/
+    line-height: 30px; /*espaçamento entrelinha*/
+    border-radius: 1px !important; /*leve acentuada nas bordas*/
+    text-align: center; /*posiciona o texto no centro*/
+    padding: 0 6px; /*espaçamento esquerda e direita*/
+}
+
+.pagination li a:hover { /*referente aos links das páginas*/
+    color: #666; /*cor do link*/
+}
+
+.pagination li.active a.page-link { /*referente a página que está ativada*/
+    background: #4680e3; /*cor da caixa*/
+}
+
+.pagination li.active a:hover { /*referente a página que está ativada*/
+    background: #507dca; /*cor do link*/
+}
+
+.pagination li.disabled i { /*referente ao símbolo que está desativado*/
+    color: #ccc; /*cor do símbolo*/
+}
+
+.hint-text { /*referente a quantidade de páginas*/
+    float: left; /*posiciona a esquerda*/
+    margin-top: 10px; /*margem superior*/
+    font-size: 13px; /*tamanho fonte*/
+}
+
+/* Customização dos checkbox */
+.custom-checkbox {
+    position: relative;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    margin: 5px 0 0 3px;
+    z-index: 9;
+}
+
+.custom-checkbox label:before {
+    width: 18px;
+    height: 18px;
+}
+
+.custom-checkbox label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    background: white;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: inherit;
+    z-index: 3;
+    transform: rotateZ(45deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label:before {
+    border-color: #03A9F4;
+    background: #03A9F4;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label:after {
+    border-color: #fff;
+}
+
+.custom-checkbox input[type="checkbox"]:disabled+label:before {
+    color: #b8b8b8;
+    cursor: auto;
+    box-shadow: none;
+    background: #ddd;
+}
+
+/*Customização do Modal*/
+.modal .modal-dialog {
+    max-width: 400px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+    padding: 20px 30px;
+}
+
+.modal .modal-content {
+    border-radius: 1px;
+}
+
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 1px 1px;
+}
+
+.modal .modal-title {
+    display: inline-block;
+}
+
+.modal .form-control {
+    border-radius: 1px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+
+.modal textarea.form-control {
+    resize: vertical;
+}
+
+.modal .btn {
+    border-radius: 1px;
+    min-width: 100px;
+}
+
+.modal form label {
+    font-weight: normal;
+}
